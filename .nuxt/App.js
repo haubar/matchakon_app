@@ -11,12 +11,20 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../node_modules/element-ui/lib/theme-chalk/index.css'
 
+import '../assets/vendor/bootstrap/css/bootstrap.min.css'
+
+import '../assets/css/grayscale.css'
+
+import '../assets/css/infinite-scroll-docs.css'
+
+import '../assets/css-extend/extend-grayscale.css'
+
 import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"matchakon","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"matchakon for nuxt.js"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+  head: {"title":"matchakon","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, shrink-to-fit=no"},{"hid":"description","name":"description","content":"matchakon for nuxt.js"},{"property":"og:title","content":"抹茶控","template":chunk => `${chunk} - 抹茶控`,"vmid":"og:title"},{"property":"og:locale","content":"zh_TW","vmid":"og:locale"},{"property":"og:site_name","content":"matchakon 抹茶控","vmid":"og:site_name"},{"property":"og:url","content":"matchakon.cc","vmid":"og:url"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"script":[],"style":[]},
 
   render (h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })

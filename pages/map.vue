@@ -1,5 +1,5 @@
 <template lang="pug">
-  header.masthead
+  .masthead
     .mx-auto.text-center.d-none.d-sm-block
       h1.mx-auto.my-0 matchakon
       h2.mx-auto.text-black-50.mt-2.mb-5 抹茶甜點的相關分布

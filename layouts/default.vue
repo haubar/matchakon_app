@@ -8,13 +8,13 @@
 
 
 <script>
-    import header from '~/components/header.vue'
-    import footer from '~/components/footer.vue'
+    import Header from '~/components/header.vue'
+    import Footer from '~/components/footer.vue'
 
     export default {
         components: {
-            header,
-            footer
+            Header,
+            Footer
         }
     }
 </script>

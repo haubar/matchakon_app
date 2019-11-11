@@ -3,6 +3,9 @@ const env = require('dotenv').config()
 
 export default {
   mode: 'universal',
+  generate: {
+    minify: false
+  },
   /*
   ** Headers of the page
   */
@@ -76,6 +79,7 @@ export default {
   */
   build: {
     transpile: [/^element-ui/],
+    dev: true,
     /*
     ** You can extend webpack config here
     */

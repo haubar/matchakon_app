@@ -2,19 +2,19 @@
   <div>
     <Header/>
       <nuxt/>
-    <footer/>
+    <Footer/>
   </div>
 </template>
 
 
 <script>
     import Header from '~/components/header.vue'
-    import footer from '~/components/footer.vue'
+    import Footer from '~/components/footer.vue'
 
     export default {
         components: {
             Header,
-            footer
+            Footer
         }
     }
 </script>

@@ -4,7 +4,7 @@ const env = require('dotenv').config()
 export default {
   mode: 'universal',
   generate: {
-    minify: false
+    // minify: false
   },
   /*
   ** Headers of the page
@@ -52,11 +52,13 @@ export default {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css',
+    // 'element-ui/lib/theme-chalk/index.css',
     '@/assets/vendor/bootstrap/css/bootstrap.min.css',
-	  '@/assets/css/grayscale.css',
-	  '@/assets/css/infinite-scroll-docs.css',
-	  '@/assets/css-extend/extend-grayscale.css'
+    '@/assets/scss/grayscale.scss',
+    '@/assets/sass/extend-grayscale.sass'
+	  // '@/assets/css/grayscale.css',
+	  // '@/assets/css/infinite-scroll-docs.css',
+	  // '@/assets/css-extend/extend-grayscale.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -79,7 +81,20 @@ export default {
   */
   build: {
     transpile: [/^element-ui/],
-    dev: true,
+    html: {
+      minify: true
+      // minify: {
+        // collapseBooleanAttributes: false,
+        // decodeEntities: false,
+        // minifyCSS: false,
+        // minifyJS: false,
+        // processConditionalComments: false,
+        // removeEmptyAttributes: false,
+        // removeRedundantAttributes: false,
+        // trimCustomFragments: false,
+        // useShortDoctype: false
+      // }
+    },
     /*
     ** You can extend webpack config here
     */

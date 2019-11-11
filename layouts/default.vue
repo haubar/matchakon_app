@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header/>
+    <Header />
       <nuxt/>
     <footer/>
   </div>
@@ -8,12 +8,12 @@
 
 
 <script>
-    import header from '~/components/header.vue'
+    import Header  from '~/components/header.vue'
     import footer from '~/components/footer.vue'
 
     export default {
         components: {
-            header,
+            Header ,
             footer
         }
     }

@@ -11,37 +11,37 @@
         .image-grid__col-sizer
         .image-grid__gutter-sizer
         .image-grid__item(data-toggle='modal', data-target='#exampleModal')
-          img.image-grid__image.rounded(src='img/image-03.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-03.jpg', alt='cakepic')
         .image-grid__item
           img.image-grid__image.rounded(src='img/image-02.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-01.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-01.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-04.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-04.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-05.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-05.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-06.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-06.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-07.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-07.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-08.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-08.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-09.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-09.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-10.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-10.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-11.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-11.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-12.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-12.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-13.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-13.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-14.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-14.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-15.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-15.jpg', alt='cakepic')
         .image-grid__item
-          img.image-grid__image.rounded(src='img/image-16.jpg', alt='cakepic')
+          img.image-grid__image.rounded(src='/img/image-16.jpg', alt='cakepic')
       .scroller-status
         .loader-ellips.infinite-scroll-request
           span.loader-ellips__dot
@@ -65,7 +65,7 @@
         .modal-body
           .row.align-items-center.no-gutters
             .col-xl-7.col-lg-7
-              img.img-fluid.mb-3.mb-lg-0(src='img/image-03.jpg', alt='cakepic')
+              img.img-fluid.mb-3.mb-lg-0(src='/img/image-03.jpg', alt='cakepic')
             .col-xl-5.col-lg-5
               .featured-text.text-lg-left.ml-3
                 p.text-black-50

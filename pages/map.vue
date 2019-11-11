@@ -5,7 +5,7 @@
       h2.mx-auto.text-black-50.mt-2.mb-5 抹茶甜點的相關分布
     .container.d-flex.h-100.align-items-center
       .world_map
-        img.world_map_img(src='img/matchakon_map.png', alt='世界地圖')
+        img.world_map_img(src='/img/matchakon_map.png', alt='世界地圖')
         ol.btn_map_point
           li.dotdate
             a

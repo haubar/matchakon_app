@@ -4,7 +4,7 @@
     // Project One Row
     .row.justify-content-center.no-gutters.mb-5.mb-lg-0
       .col-lg-6
-        img.img-fluid(src='img/image-23.jpeg', alt='抹茶點心照片')
+        img.img-fluid(src='/img/image-23.jpeg', alt='抹茶點心照片')
       .col-lg-6
         .bg-black.text-center.h-100.project
           .d-flex.h-100

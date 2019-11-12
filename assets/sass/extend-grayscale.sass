@@ -1,2 +1,372 @@
+
+#mainNav
+    min-height: 56px
+
+    .navbar-toggler
+        font-size: 80%
+        padding: 0.75rem
+        color: #64a19d
+        border: 1px solid #64a19d
+
+        &:focus
+            outline: none
+
+    .navbar-brand
+        padding: 0
+
+    .navbar-nav .nav-item
+        &:hover
+            color: fade(white, 80%)
+            outline: none
+            background-color: transparent
+
+        &:active, &:focus
+        outline: none
+            background-color: transparent
+
+    @media (min-width: 992px)
+        #mainNav
+            padding-top: 0
+            padding-bottom: 0
+            border-bottom: none
+            background-image: url(/img/image-25.png)
+            background-position: left center
+            background-repeat: no-repeat
+            background-size: cover
+            transition: background-color 0.3s ease-in-out
+
+            .navbar-brand
+                padding: .5rem 0
+                color: rgba(13, 85, 73, 0.5)
+
+            .nav-link
+                transition: none
+                padding: 2rem 1.5rem
+                color: rgba(13, 85, 73, 0.5)
+
+                &:hover
+                    color: rgba(13, 85, 73, 0.75)
+
+                &:active
+                    color: white
+
+        &.navbar-shrink
+            background-image: url(/img/image-25.png)
+            background-position: left top
+            background-repeat: no-repeat
+            background-size: cover
+
+            .navbar-brand
+                color: #0d5549
+
+            .nav-link
+                color: #0d5549
+                padding: 1.5rem 1.5rem 1.25rem
+                border-bottom: 0.25rem solid transparent
+
+                &:hover
+                    color: #64a19d
+
+                &:active
+                    color: #467370
+
+                &.active
+                    color: #64a19d
+                    outline: none
+                    border-bottom: 0.25rem solid #64a19d
+
+        .navbar-brand
+            position: absolute
+            width: 100%
+            left: 0
+            top: 0px
+            text-align: center
+            margin: auto
+            padding: 0
+
+        .navbar-toggle
+            z-index: 1
+
+    @media (max-width: 480px)
+        #mainNav
+            background-image: url(/img/image-25.png)
+            background-position: right center
+            background-repeat: no-repeat
+            background-size: cover
+
+        .dotdate
+            width: 3px !important
+            height: 3px !important
+
+        .world_map
+            top: 110px !important
+            height: 37% !important
+
+.masthead
+    position: relative
+    width: 100%
+    height: auto
+    min-height: 35rem
+    padding: 15rem 0
+    background-position: center
+    background-repeat: no-repeat
+    background-attachment: scroll
+    background-size: cover
+
+    h1
+        font-size: 2.5rem
+        line-height: 2.5rem
+        letter-spacing: 0.8rem
+        background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))
+        -webkit-text-fill-color: transparent
+        -webkit-background-clip: text
+
+    h2
+        max-width: 20rem
+        font-size: 1rem
+
+    @media (min-width: 768px)
+        .masthead h1
+            font-size: 4rem
+            line-height: 4rem
+
+    @media (min-width: 992px)
+        .masthead
+            height: 100vh
+            padding: 0
+
+        h1
+            font-size: 6.5rem
+            line-height: 6.5rem
+            letter-spacing: 0.8rem
+
+        h2
+            max-width: 30rem
+            font-size: 1.34rem
+            font-weight: 600
+
+.btn
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important
+    padding: 1.25rem 2rem
+    font-size: 80%
+    text-transform: uppercase
+    letter-spacing: .15rem
+    border: 0
+
+.btn-primary
+    background-color: #64a19d
+
+    &:hover
+        background-color: #4f837f
+
+    &:focus
+        background-color: #4f837f
+        color: white
+
+    &:active
+        background-color: #467370 !important
+
+.about-section
+    background: linear-gradient(to bottom, #FFFFFF 0%, rgba(225, 225, 225, 0.9) 75%, rgba(225, 225, 225, 0.8) 100%)
+
+    p
+        margin-bottom: 5rem
+
+.projects-section
+    padding: 10rem 0
+
+    .featured-text
+        padding: 2rem
+
+  .project-text
+    padding: 3rem
+    font-size: 90%
+
+@media (min-width: 992px)
+    .projects-section 
+        .featured-text
+            padding: 0 0 0 2rem
+            border-left: 0.5rem solid #64a19d
+
+@media (min-width: 992px)
+    .projects-section 
+        .project-text
+            padding: 5rem
+            hr
+                border-color: #64a19d
+                border-width: .25rem
+                width: 30%
+
+.signup-section
+    padding: 10rem 0
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#0d5549)), url("/img/image-21.jpeg")
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #0d5549 100%), url("/img/image-21.jpeg")
+    background-position: center
+    background-repeat: no-repeat
+    background-attachment: scroll
+    background-size: cover
+
+    .form-inline 
+        input
+            box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important
+            padding: 1.25rem 2rem
+            height: auto
+            font-size: 80%
+            text-transform: uppercase
+            letter-spacing: 0.15rem
+            border: 0
+
+.contact-section
+    padding: 5rem 0 0
+
+    .card
+        border: 0
+        border-bottom: 0.25rem solid #64a19d
+
+        h4
+            font-size: 0.8rem
+            text-transform: uppercase
+            letter-spacing: 0.15rem
+
+        hr
+            border-color: #64a19d
+            border-width: 0.25rem
+            width: 3rem
+
+    .social
+        margin-top: 5rem
+
+        a
+            text-align: center
+            height: 3rem
+            width: 3rem
+            background: rgba(255, 255, 255, 0.1)
+            border-radius: 100%
+            line-height: 3rem
+            color: rgba(255, 255, 255, 0.3)
+
+            &:hover
+                color: rgba(13, 85, 73, 0.5)
+
+            &:active
+                color: #fff
+
+.btn-share,
+.texr-share
+    z-index: 3
+    position: relative
+    top: 170px
+
+.texr-share
+  top: 20px
+
+body
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+    letter-spacing: 0.0625em
+    background-color: #fafafa
+
+a
+    color: #64a19d
+
+    &:focus, &:hover
+        text-decoration: none
+        color: #3c6360
+
+.bg-black
+    background-color: #0d5549 !important
+
+.bg-primary
+    background-color: #64a19d !important
+
+.bg-location
+    background-image: url(/img/matchakon_bg.png)
+    background-position: left bottom
+    background-size: contain
+    background-repeat: no-repeat
+
+.text-primary
+    color: #64a19d !important
+
+footer
+    padding: 5rem 0
+
+.matchakon_topnav
+    position: relative
+    z-index: 3
+
+/********世界地圖********************
+
+.world_map
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 170px
+    left: 50%
+    z-index: 1
+    transform: translateX(-50%)
+    width: 100%
+    max-width: 1040px
+    min-width: 320px
+    height: 50%
+
+.world_map_img
+    width: 100%
+
+.btn_map_point
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 1
+    padding-left: 0
+    text-align: center
+    list-style: none
+    margin: 0
+    top: 0
+
+.dotdate
+    position: absolute
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    width: 7px
+    height: 7px
+
+.btn_map_point li
+    cursor: pointer
+    background: url("/img/map_dot.png") no-repeat center
+    background-size: contain
+
+    &:first-child
+        top: 34%
+        left: 84%
+
+    &:nth-child(2)
+        top: 56%
+        left: 50%
+
+    &:nth-child(3)
+        top: 12.5%
+        left: 36%
+
+    &:nth-child(4)
+        top: 21%
+        left: 25%
+
+    &:nth-child(5)
+        top: 29%
+        left: 23%
+
+    &:nth-child(6)
+        top: 48%
+        left: 65%
+
+    a
+        flex: 1
+        width: 100%
+        height: 100%
+  
 .mh-auto
-  min-height: auto !important
+    min-height: auto !important

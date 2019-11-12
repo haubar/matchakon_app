@@ -54,7 +54,7 @@ export default {
   css: [
     // 'element-ui/lib/theme-chalk/index.css',
     '@/assets/vendor/bootstrap/css/bootstrap.min.css',
-    '@/assets/scss/grayscale.scss',
+    // '@/assets/scss/grayscale.scss',
     '@/assets/sass/extend-grayscale.sass'
 	  // '@/assets/css/grayscale.css',
 	  // '@/assets/css/infinite-scroll-docs.css',

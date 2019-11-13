@@ -24,83 +24,81 @@
         outline: none
             background-color: transparent
 
-    @media (min-width: 992px)
-        #mainNav
-            padding-top: 0
-            padding-bottom: 0
-            border-bottom: none
-            background-image: url(/img/image-25.png)
-            background-position: left center
-            background-repeat: no-repeat
-            background-size: cover
-            transition: background-color 0.3s ease-in-out
-
-            .navbar-brand
-                padding: .5rem 0
-                color: rgba(13, 85, 73, 0.5)
-
-            .nav-link
-                transition: none
-                padding: 2rem 1.5rem
-                color: rgba(13, 85, 73, 0.5)
-
-                &:hover
-                    color: rgba(13, 85, 73, 0.75)
-
-                &:active
-                    color: white
-
-        &.navbar-shrink
-            background-image: url(/img/image-25.png)
-            background-position: left top
-            background-repeat: no-repeat
-            background-size: cover
-
-            .navbar-brand
-                color: #0d5549
-
-            .nav-link
-                color: #0d5549
-                padding: 1.5rem 1.5rem 1.25rem
-                border-bottom: 0.25rem solid transparent
-
-                &:hover
-                    color: #64a19d
-
-                &:active
-                    color: #467370
-
-                &.active
-                    color: #64a19d
-                    outline: none
-                    border-bottom: 0.25rem solid #64a19d
+@media (min-width: 992px)
+    #mainNav
+        padding-top: 0
+        padding-bottom: 0
+        border-bottom: none
+        background-image: url(/img/image-25.png)
+        background-position: left center
+        background-repeat: no-repeat
+        background-size: cover
+        transition: background-color 0.3s ease-in-out
 
         .navbar-brand
-            position: absolute
-            width: 100%
-            left: 0
-            top: 0px
-            text-align: center
-            margin: auto
-            padding: 0
+            padding: .5rem 0
+            color: rgba(13, 85, 73, 0.5)
 
-        .navbar-toggle
-            z-index: 1
+        .nav-link
+            transition: none
+            padding: 2rem 1.5rem
+            color: rgba(13, 85, 73, 0.5)
 
-    @media (max-width: 480px)
-        #mainNav
-            background-image: url(/img/image-25.png)
-            background-position: right center
-            background-repeat: no-repeat
-            background-size: cover
+            &:hover
+                color: rgba(13, 85, 73, 0.75)
 
-        .dotdate
-            width: 3px !important
-            height: 3px !important
+            &:active
+                color: white
 
-        .world_map
-            top: 110px !important
-            height: 37% !important
+    &.navbar-shrink
+        background-image: url(/img/image-25.png)
+        background-position: left top
+        background-repeat: no-repeat
+        background-size: cover
+
+        .navbar-brand
+            color: #0d5549
+
+        .nav-link
+            color: #0d5549
+            padding: 1.5rem 1.5rem 1.25rem
+            border-bottom: 0.25rem solid transparent
+
+            &:hover
+                color: #64a19d
+            &:active
+                color: #467370
+            &.active
+                color: #64a19d
+                outline: none
+                border-bottom: 0.25rem solid #64a19d
+
+    .navbar-brand
+        position: absolute
+        width: 100%
+        left: 0
+        top: 0px
+        text-align: center
+        margin: auto
+        padding: 0
+
+    .navbar-toggle
+        z-index: 1
+
+@media (max-width: 480px)
+    #mainNav
+        background-image: url(/img/image-25.png)
+        background-position: right center
+        background-repeat: no-repeat
+        background-size: cover
+
+    .dotdate
+           width: 3px !important
+        height: 3px !important
+
+    .world_map
+        top: 110px !important
+        height: 37% !important
 
 .masthead
     position: relative

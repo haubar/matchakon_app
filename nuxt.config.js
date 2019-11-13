@@ -82,18 +82,18 @@ export default {
   build: {
     transpile: [/^element-ui/],
     html: {
-      minify: true
-      // minify: {
-        // collapseBooleanAttributes: false,
-        // decodeEntities: false,
-        // minifyCSS: false,
-        // minifyJS: false,
-        // processConditionalComments: false,
-        // removeEmptyAttributes: false,
-        // removeRedundantAttributes: false,
-        // trimCustomFragments: false,
-        // useShortDoctype: false
-      // }
+      // minify: true
+      minify: {
+        collapseBooleanAttributes: false,
+        decodeEntities: false,
+        minifyCSS: false,
+        minifyJS: false,
+        processConditionalComments: false,
+        removeEmptyAttributes: false,
+        removeRedundantAttributes: false,
+        trimCustomFragments: false,
+        useShortDoctype: false
+      }
     },
     /*
     ** You can extend webpack config here

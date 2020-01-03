@@ -3,9 +3,6 @@ const env = require('dotenv').config()
 
 export default {
   mode: 'universal',
-  generate: {
-    // minify: false
-  },
   /*
   ** Headers of the page
   */
@@ -64,7 +61,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/axios'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -75,30 +73,42 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios'
   ],
+  axios: {
+    // proxyHeaders: false
+    baseURL: 'https://us-central1-matchakon-api.cloudfunctions.net/'
+  },
   /*
   ** Build configuration
   */
   build: {
     transpile: [/^element-ui/],
     html: {
-      // minify: true
-      minify: {
-        collapseBooleanAttributes: false,
-        decodeEntities: false,
-        minifyCSS: false,
-        minifyJS: false,
-        processConditionalComments: false,
-        removeEmptyAttributes: false,
-        removeRedundantAttributes: false,
-        trimCustomFragments: false,
-        useShortDoctype: false
-      }
+      // minify:
+      // {
+      //   collapseBooleanAttributes: false,
+      //   decodeEntities: false,
+      //   minifyCSS: true,
+      //   minifyJS: true,
+      //   processConditionalComments: false,
+      //   removeEmptyAttributes: false,
+      //   removeRedundantAttributes: false,
+      //   trimCustomFragments: false,
+      //   useShortDoctype: false
+      // }
+    },
+    
+    loaders: {
+      pugPlain: 
+        { pretty: true }
     },
     /*
     ** You can extend webpack config here
     */
     extend (config, ctx) {
     }
-  }
+  },
+
+
 }

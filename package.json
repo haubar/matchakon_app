@@ -12,10 +12,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.9.2",
     "dotenv": "^8.2.0",
     "element-ui": "^2.4.11",
     "nuxt": "^2.0.0",
     "pug": "^2.0.4",
+    "pug-filters": "^3.1.1",
     "pug-plain-loader": "^1.0.0"
   },
   "devDependencies": {

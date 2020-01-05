@@ -3,6 +3,9 @@ const env = require('dotenv').config()
 
 export default {
   mode: 'universal',
+  env: {
+    apiBaseUrl: process.env.apiBaseUrl || 'https://us-central1-matchakon-api.cloudfunctions.net/'
+  },
   /*
   ** Headers of the page
   */
@@ -76,8 +79,8 @@ export default {
     '@nuxtjs/axios'
   ],
   axios: {
-    // proxyHeaders: false
-    baseURL: 'https://us-central1-matchakon-api.cloudfunctions.net/'
+    proxy: false,
+    // baseURL: 'https://us-central1-matchakon-api.cloudfunctions.net/'
   },
   /*
   ** Build configuration

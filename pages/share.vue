@@ -10,10 +10,11 @@
       .image-grid.are-images-unloaded(data-js='image-grid')
         .image-grid__col-sizer
         .image-grid__gutter-sizer
-        each val, index in article
-        .image-grid__item(data-toggle='modal', data-target='#exampleModal')
-          img.image-grid__image.rounded(src='https://www.instagram.com/p/'+index.shortcode, alt='')
-        
+        //- if !!article
+          //- each val, index in article
+          //-   .image-grid__item(data-toggle='modal', data-target='#exampleModal')
+          //-     img.image-grid__image.rounded(src='https://www.instagram.com/p/'+index.shortcode, alt='')
+            
       .scroller-status
         .loader-ellips.infinite-scroll-request
           span.loader-ellips__dot
@@ -26,11 +27,15 @@
 
 </template>
 <script>
-// import axios from 'axios'
+import axios from '~/plugins/axios'
+
 export default {
   async asyncData(context) {
-    const {data} = await $axios.$get('/matcha')
-    return { article:data };
+    const {data} = await axios.get('matcha')
+    // .then((res)=>{
+      return { article:data }
+    // })
+    console.log(article.data)
   }
 }
 </script>

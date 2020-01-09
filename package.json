@@ -19,7 +19,8 @@
     "nuxt": "^2.0.0",
     "pug": "^2.0.4",
     "pug-filters": "^3.1.1",
-    "pug-plain-loader": "^1.0.0"
+    "pug-plain-loader": "^1.0.0",
+    "vue-instagram-embed": "^1.0.0"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",

@@ -1,7 +1,7 @@
 <template lang="pug">
  .masthead.h-auto.mh-auto
   .mx-auto.text-center.d-none.d-sm-block
-    h1.mx-auto.my-0 matchakon
+    h1.mx-auto.my-0 matchakon{{id}}
     h2.mx-auto.text-black-50.mb-4.texr-share 分享 / SHARE
   section#about.about-section.text-center.bg-location
     .container.container--wide
@@ -10,11 +10,8 @@
       .image-grid.are-images-unloaded(data-js='image-grid')
         .image-grid__col-sizer
         .image-grid__gutter-sizer
-        //- if !!article
-          //- each val, index in article
-          //-   .image-grid__item(data-toggle='modal', data-target='#exampleModal')
-          //-     img.image-grid__image.rounded(src='https://www.instagram.com/p/'+index.shortcode, alt='')
-            
+        img.image-grid__image.rounded(src='https://www.instagram.com/p/'+id, alt='')
+
       .scroller-status
         .loader-ellips.infinite-scroll-request
           span.loader-ellips__dot
@@ -27,15 +24,28 @@
 
 </template>
 <script>
-import axios from '~/plugins/axios'
+// import axios from '~/plugins/axios'
+import axios from 'axios'
 
 export default {
-  async asyncData(context) {
-    const {data} = await axios.get('matcha')
-    // .then((res)=>{
-      return { article:data }
-    // })
-    console.log(article.data)
+  data () {
+    return { }
+  },
+  
+  async asyncData({ params }) {
+    const {data} = await axios.get('https://us-central1-matchakon-api.cloudfunctions.net/matcha')
+    // if (params.code){
+    //    const {data} = await axios.get('https://us-central1-matchakon-api.cloudfunctions.net/matcha/'+params.code)
+    // }
+      await console.log(data) 
+      return { 
+        data:data,
+        id:data[0].id
+      }
+      // await console.log(id)
+      // await console.log(999)
+    
+    // console.log(article.data)
   }
 }
 </script>

@@ -78,10 +78,10 @@ export default {
   modules: [
     '@nuxtjs/axios'
   ],
-  axios: {
-    proxy: false,
-    // baseURL: 'https://us-central1-matchakon-api.cloudfunctions.net/'
-  },
+  // axios: {
+  //   proxy: false,
+  //   baseURL: 'https://us-central1-matchakon-api.cloudfunctions.net/'
+  // },
   /*
   ** Build configuration
   */

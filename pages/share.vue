@@ -7,10 +7,10 @@
     .container.container--wide
       form.form-inline.d-flex
         input.form-control.flex-fill.mb-3(placeholder='Search')
-      .image-grid.are-images-unloaded(data-js='image-grid')
+      .image-grid.are-images-unloaded(data-js='image-grid', v-for="val in data")
         .image-grid__col-sizer
         .image-grid__gutter-sizer
-        img.image-grid__image.rounded(src='https://www.instagram.com/p/'+id, alt='')
+        img.image-grid__image.rounded(:src=`val.thumbnail_src`, alt='')
 
       .scroller-status
         .loader-ellips.infinite-scroll-request

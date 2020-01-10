@@ -7,15 +7,16 @@
     .container.container--wide
       form.form-inline.d-flex
         input.form-control.flex-fill.mb-3(placeholder='Search')
-      .image-grid.are-images-unloaded(data-js='image-grid', v-for="article in data")
-        .image-grid__col-sizer
-        .image-grid__gutter-sizer
-          instagram-embed(
-            :url="'https://www.instagram.com/p/'+article.shortcode+'/'"
-            :max-width='150'
-            :hide-caption="true"
-            :class-name="'instagram-embed'"
-          )
+      .d-flex.row
+        .image-grid.are-images-unloaded(data-js='image-grid', v-for="article in data")
+          .image-grid__col-sizer
+          .image-grid__gutter-sizer
+            instagram-embed(
+              :url="'https://www.instagram.com/p/'+article.shortcode+'/'"
+              :max-width='150'
+              :hide-caption="true"
+              :class-name="'instagram-embed'"
+            )
 
       .scroller-status
         .loader-ellips.infinite-scroll-request

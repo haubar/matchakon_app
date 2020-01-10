@@ -7,7 +7,7 @@
     .container.container--wide
       form.form-inline.d-flex
         input.form-control.flex-fill.mb-3(placeholder='Search')
-      .d-flex.row
+      .d-flex.row.justify-content-between
         .image-grid.are-images-unloaded(data-js='image-grid', v-for="article in data")
           .image-grid__col-sizer
           .image-grid__gutter-sizer

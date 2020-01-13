@@ -42,7 +42,7 @@ const apiPath = 'https://us-central1-matchakon-api.cloudfunctions.net/matcha';
 export default {
   data () {
     return { 
-      page: 12,
+      page: 1,
       list: [],
     }
   },
@@ -57,7 +57,7 @@ export default {
         },
       }).then(({ data }) => {
         if (data.length > 1) {
-          this.page += 12;
+          this.page += 1;
           
           data.forEach((value, index) => {
               this.list.push(value);

@@ -42,7 +42,7 @@ const apiPath = 'https://us-central1-matchakon-api.cloudfunctions.net/matcha';
 export default {
   data () {
     return { 
-      page: 0,
+      page: 12,
       list: [],
     }
   },
@@ -56,43 +56,12 @@ export default {
           page: this.page,
         },
       }).then(({ data }) => {
-        // console.info('get page result',data)
-        // console.info('data length',data.length)
-        // console.info('this list', this.list)
         if (data.length > 1) {
           this.page += 12;
           
-
-          let testdata = {
-            "_id": "5ddba7fe348789396a5be6a5",
-            "id": "2184593140337145352",
-            "shortcode": "B5RO-L8jPYI",
-            "timestamp": "1574643817",
-            "display_url": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/71849977_1437830006386031_761390898414370838_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=111&oh=497e053511416dc187fdd76b7599dd26&oe=5E7B685F",
-            "thumbnail_src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.180.1440.1440a/s640x640/71849977_1437830006386031_761390898414370838_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=111&oh=0b63a09b2c3b34d096efbf3c5240672b&oe=5E875BCC",
-            "owner_id": "1565937",
-            "tag": "抹茶控",
-            "sort": 1,
-            "enable": true,
-            "created_date": "2019-11-25 9:3:37",
-            "__v": 0,
-            "address": null,
-            "lat": "25.05839",
-            "lng": "121.53257",
-            "location_id": "890951091030686",
-            "location_name": "木白甜點咖啡店",
-            "on_place": true
-          }
-
-          // this.list = data;
-          this.list.push(testdata) 
-
-          
-
-          // this.$set(this.$data.list, this.$data.list.length, data)
-          // this.$set(this.$data, 'list', this.$data.list)
-          // console.log(this.$data)
-          console.info('get list',this.list)
+          data.forEach((value, index) => {
+              this.list.push(value);
+          })
           $state.loaded();
         } else {
           $state.complete();

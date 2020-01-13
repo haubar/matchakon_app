@@ -26,33 +26,55 @@
           span.loader-ellips__dot
         //- p.scroller-status__message.infinite-scroll-last End of content
         //- p.scroller-status__message.infinite-scroll-error No more pages to load
-
+    infinite-loading(
+      @infinite="infiniteHandler"
+    )
 
 </template>
 <script>
 // import axios from '~/plugins/axios'
 import axios from 'axios'
-import InstagramEmbed from 'vue-instagram-embed';
+import InstagramEmbed from 'vue-instagram-embed'
+import InfiniteLoading from 'vue-infinite-loading'
+
+
+const apiPath = '//us-central1-matchakon-api.cloudfunctions.net/matcha';
 
 export default {
   data () {
-    return { }
+    return { 
+      page: 1,
+      list: [],
+    }
   },
   components: {
     InstagramEmbed
   },
+  methods: {
+    infiniteHandler($state) {
+      axios.get(apiPath, {
+        params: {
+          page: this.page,
+        },
+      }).then(({ data }) => {
+        if (data.hits.length) {
+          this.page += 1;
+          this.list.push(data);
+          $state.loaded();
+        } else {
+          $state.complete();
+        }
+      })
+    },
+  },
   async asyncData({ params }) {
-    const {data} = await axios.get('https://us-central1-matchakon-api.cloudfunctions.net/matcha')
+    const {data} = await axios.get(apiPath)
     if (params.code){
-       const {data} = await axios.get('https://us-central1-matchakon-api.cloudfunctions.net/matcha/'+params.code)
+       const {data} = await axios.get(apiPath+params.code)
     }
       return { 
         data:data,
       }
-      // await console.log(id)
-      // await console.log(999)
-    
-    // console.log(article.data)
   }
 }
 </script>

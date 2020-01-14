@@ -65,6 +65,7 @@ export default {
   */
   plugins: [
     '@/plugins/element-ui',
+    { src: '~plugins/ga.js', mode: 'client' }
     // { src: '~plugins/vue-infinite-loading', ssr: false}
     // { src: '~plugins/vue-infinite-loading', ssr: 'client' },
     // { src: '~plugins/vue-infinite-loading', ssr: 'server' }

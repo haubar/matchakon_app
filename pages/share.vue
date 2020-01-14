@@ -26,16 +26,16 @@
           span.loader-ellips__dot
         //- p.scroller-status__message.infinite-scroll-last End of content
         //- p.scroller-status__message.infinite-scroll-error No more pages to load
-    infinite-loading(
-      @infinite="infiniteHandler"
-    )
+      no-ssr
+        infinite-loading(
+          @infinite="infiniteHandler"
+        )
 
 </template>
 <script>
-// import axios from '~/plugins/axios'
 import axios from 'axios'
 import InstagramEmbed from 'vue-instagram-embed'
-
+import InfiniteLoading from "vue-infinite-loading"
 
 const apiPath = 'https://us-central1-matchakon-api.cloudfunctions.net/matcha';
 
@@ -47,7 +47,8 @@ export default {
     }
   },
   components: {
-    InstagramEmbed
+    InstagramEmbed,
+    InfiniteLoading
   },
   methods: {
     infiniteHandler($state) {

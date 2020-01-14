@@ -65,7 +65,9 @@ export default {
   */
   plugins: [
     '@/plugins/element-ui',
-    { src: '~plugins/vue-infinite-loading', ssr: false }
+    // { src: '~plugins/vue-infinite-loading', ssr: false}
+    // { src: '~plugins/vue-infinite-loading', ssr: 'client' },
+    // { src: '~plugins/vue-infinite-loading', ssr: 'server' }
   ],
   /*
   ** Nuxt.js dev-modules

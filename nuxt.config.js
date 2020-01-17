@@ -79,11 +79,12 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/google-adsense', {
-      id: 'ca-pub-2884277132041854'
-    }
+    // '@nuxtjs/axios',
+    ['@nuxtjs/google-adsense']
   ],
+  'google-adsense': {
+    id: 'ca-pub-2884277132041854'
+  },
   // axios: {
   //   proxy: false,
   //   baseURL: 'https://us-central1-matchakon-api.cloudfunctions.net/'

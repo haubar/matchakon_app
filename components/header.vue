@@ -3,10 +3,10 @@
       .container
           a.navbar-brand.js-scroll-trigger(href='#page-top')
             img.img-fluid(src='/img/matchakon_logo.png', alt='matchakon-logo')
-          button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          b-button.navbar-toggler.navbar-toggler-right(v-b-toggle="'navbarResponsive-2'") 
             | Menu 
             i.fas.fa-bars
-          #navbarResponsive.collapse.navbar-collapse
+          b-collapse#navbarResponsive.collapse.navbar-collapse
             ul.navbar-nav.ml-auto.matchakon_topnav
               li.nav-item
                 a.nav-link.js-scroll-trigger(href='/map') 地圖

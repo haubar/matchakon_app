@@ -3,7 +3,7 @@
       .container
           a.navbar-brand.js-scroll-trigger(href='#page-top')
             img.img-fluid(src='/img/matchakon_logo.png', alt='matchakon-logo')
-          b-button.navbar-toggler.navbar-toggler-right(v-b-toggle="'navbarResponsive-2'") 
+          b-button.navbar-toggler.navbar-toggler-right(v-b-toggle="'navbarResponsive'") 
             | Menu 
             i.fas.fa-bars
           b-collapse#navbarResponsive.collapse.navbar-collapse

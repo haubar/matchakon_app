@@ -41,6 +41,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
+      {src: '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'},
+      // { src: '@/assets/vendor/bootstrap/js/bootstrap/bootstrap.min.js' }
       // { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js', async: true, defer: true }
     ]
   },
@@ -108,7 +110,6 @@ export default {
       //   useShortDoctype: false
       // }
     },
-    
     loaders: {
       pugPlain: 
         { pretty: true }

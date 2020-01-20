@@ -88,6 +88,11 @@ export default {
   'google-adsense': {
     id: 'ca-pub-2884277132041854'
   },
+  bootstrapVue: {
+    componentPlugins: [
+      'CollapsePlugin'
+    ]
+  },
   // axios: {
   //   proxy: false,
   //   baseURL: 'https://us-central1-matchakon-api.cloudfunctions.net/'

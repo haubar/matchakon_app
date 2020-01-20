@@ -41,7 +41,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {src: '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'},
+      // {src: '//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.js', async: true, defer: true },
       // { src: '@/assets/vendor/bootstrap/js/bootstrap/bootstrap.min.js' }
       // { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js', async: true, defer: true }
     ]
@@ -55,7 +55,7 @@ export default {
   */
   css: [
     // 'element-ui/lib/theme-chalk/index.css',
-    '@/assets/vendor/bootstrap/css/bootstrap.min.css',
+    // '@/assets/vendor/bootstrap/css/bootstrap.min.css',
     // '@/assets/scss/grayscale.scss',
     '@/assets/sass/extend-grayscale.sass'
 	  // '@/assets/css/grayscale.css',
@@ -82,6 +82,7 @@ export default {
   */
   modules: [
     // '@nuxtjs/axios',
+    ['bootstrap-vue/nuxt'],
     ['@nuxtjs/google-adsense']
   ],
   'google-adsense': {

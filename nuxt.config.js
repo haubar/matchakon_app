@@ -83,7 +83,8 @@ export default {
   modules: [
     // '@nuxtjs/axios',
     ['bootstrap-vue/nuxt'],
-    ['@nuxtjs/google-adsense']
+    ['@nuxtjs/google-adsense'],
+    ['nuxt-leaflet']
   ],
   'google-adsense': {
     id: 'ca-pub-2884277132041854'

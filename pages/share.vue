@@ -5,8 +5,6 @@
     h2.mx-auto.text-black-50.mb-4.texr-share 分享 / SHARE
   section#about.about-section.text-center.bg-location
     .container.container--wide
-      form.form-inline.d-flex
-        input.form-control.flex-fill.mb-3(placeholder='Search')
       .d-flex.row.justify-content-between
         .image-grid.are-images-unloaded(data-js='image-grid', v-for="article in list")
           .image-grid__col-sizer

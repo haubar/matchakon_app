@@ -12,6 +12,4 @@
                 a.nav-link.js-scroll-trigger(href='/map') 地圖
               li.nav-item
                 a.nav-link.js-scroll-trigger(href='/share') 分享
-              li.nav-item
-                a.nav-link.js-scroll-trigger(href='/contact') 聯絡我們
 </template>

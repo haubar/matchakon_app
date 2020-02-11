@@ -44,3 +44,4 @@ typings/
 .nuxt/
 dist/
 .DS_Store
+*.lock
